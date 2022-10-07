@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Codifik</title>
+</head>
+
+<body>
+    
+<div class="container"  >
+    <form class="mess">
+       
+        <input type="text" placeholder="Escreva sua mensagem"><br>
+
+            <select name="opcoes" class="opcoes_cod">
+                <option value="EsolhaUmaOpcao"> Escolha uma opção </option>
+                <option value="cifraDeCesar"> Cifra de César </option>
+                <option value="base64"> Base 64 </option>
+            </select>
+       
+        <br><br>
+        <div>  
+           <input type="radio" id="codificar" name="cod_or_descod" value="Codificar">
+           <label for="codificar">Codificar</label>
+
+           <input type="radio" id="decodificar" name="cod_or_descod" value="Decodificar">
+           <label for="decodificar">Decodificar</label>
+        </div>
+
+        <br>
+
+        <button id="but_gerar">Gerar</button>
+
+    </form>
+</div>
+
+</body>
+</html>
