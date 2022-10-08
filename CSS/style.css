@@ -24,5 +24,46 @@ html,body{
     justify-content: center;
     align-items: center;
 }
-#codificar{}
-#decodificar{}
+
+#text{
+    width: 250px;
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-align: center;}
+    
+
+.opcoes_cod{
+    width: 150px; 
+    height: 100px;}
+
+#number{
+    display: none;
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+#codificar{
+color: #ffffff;
+font-size: 20px;
+}
+
+#decodificar{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#but_gerar{
+    width: 90px;
+    height: 500px;
+    background-color: #8c2764;
+    border: 2px solid #8c276430;
+    border-radius: 20px;
+    font-size: 15px;
+    color:#ffffff
+}
+
+#mensage_cod{ 
+    font-size: 30px;
+}

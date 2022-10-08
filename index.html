@@ -13,7 +13,7 @@
 <div class="container"  >
     <form class="mess">
        
-        <input type="text" placeholder="Escreva sua mensagem"><br>
+        <input type="text" id="text" placeholder="Escreva sua mensagem"><br>
 
             <select name="opcoes" class="opcoes_cod">
                 <option value="EsolhaUmaOpcao"> Escolha uma opção </option>
@@ -21,19 +21,25 @@
                 <option value="base64"> Base 64 </option>
             </select>
        
-        <br><br>
-        <div>  
-           <input type="radio" id="codificar" name="cod_or_descod" value="Codificar">
-           <label for="codificar">Codificar</label>
+        <input type="number" id="number" placeholder="número" min="1" max="26">
 
-           <input type="radio" id="decodificar" name="cod_or_descod" value="Decodificar">
-           <label for="decodificar">Decodificar</label>
+        <br><br>
+
+        <div>  
+           <input type="radio" name="cod_or_descod" value="Codificar">
+           <label for="codificar" id="codificar">Codificar</label>
+
+           <input type="radio" name="cod_or_descod" value="Decodificar">
+           <label for="decodificar" id="decodificar">Decodificar</label>
         </div>
 
         <br>
 
-        <button id="but_gerar">Gerar</button>
+        <button type="submit" id="but_gerar">Gerar</button>
 
+        <p id="mensage_cod"></p>
+
+        <script src="./JavaScript/codifik.js" ></script>
     </form>
 </div>
 
