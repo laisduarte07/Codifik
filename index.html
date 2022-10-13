@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Codifik</title>
 </head>
 
@@ -13,35 +13,41 @@
 <div class="container"  >
     <form class="mess">
        
-        <input type="text" id="text" placeholder="Escreva sua mensagem"><br>
 
-            <select name="opcoes" class="opcoes_cod">
+        <label for="escrvMensage"></label>
+        <input type="text" id="escrvMensage" placeholder="Escreva sua mensagem"><br>
+
+            <select id="opcoesCod">
                 <option value="EsolhaUmaOpcao"> Escolha uma opção </option>
                 <option value="cifraDeCesar"> Cifra de César </option>
                 <option value="base64"> Base 64 </option>
             </select>
        
-        <input type="number" id="number" placeholder="número" min="1" max="26">
+        <input type="number" id="incremento" placeholder="Número" min="1" max="25">
 
         <br><br>
 
-        <div>  
-           <input type="radio" name="cod_or_descod" value="Codificar">
-           <label for="codificar" id="codificar">Codificar</label>
+        <div class="radio">  
+           <input type="radio" id="codificar"  name="cod_or_descod" value="rdCodificar" checked>
+           <label for="codificar" id="lbcodificar"> Codificar </label>
 
-           <input type="radio" name="cod_or_descod" value="Decodificar">
-           <label for="decodificar" id="decodificar">Decodificar</label>
+           <input type="radio" id="decodificar"  name="cod_or_descod" value="rdDecodificar" checked>
+           <label for="decodificar" id="lbdecodificar"> Decodificar </label>
         </div>
 
         <br>
 
-        <button type="submit" id="but_gerar">Gerar</button>
+        <input type="submit" id="submit" value="Codifica!">
+        <input type="submit" id="submit" value="Decodifica!">
 
-        <p id="mensage_cod"></p>
-
-        <script src="./JavaScript/codifik.js" ></script>
+        <div>
+            <p class="mensage_cod"></p>
+        </div>
+        
     </form>
 </div>
+
+<script src="JavaScript/codifik.js"></script>
 
 </body>
 </html>
